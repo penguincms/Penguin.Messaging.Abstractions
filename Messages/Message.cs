@@ -34,7 +34,7 @@ namespace Penguin.Messaging.Abstractions.Messages
     /// <summary>
     /// Base message class required for automatically subscribing methods
     /// </summary>
-    public abstract class Message
+    public abstract class Message : IMessage
     {
     }
 }
