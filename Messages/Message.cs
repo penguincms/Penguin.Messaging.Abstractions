@@ -1,10 +1,12 @@
-﻿namespace Penguin.Messaging.Abstractions.Messages
+﻿using Penguin.Messaging.Abstractions.Interfaces;
+
+namespace Penguin.Messaging.Abstractions.Messages
 {
     /// <summary>
     /// Base message class required for automatically subscribing methods
     /// </summary>
     /// <typeparam name="T">The inner object type of the message</typeparam>
-    public abstract class Message<T> : Message
+    public abstract class Message<T> : Message, IMessage<T>
     {
         #region Properties
 

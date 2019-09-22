@@ -61,6 +61,17 @@
             <param name="objects">The incoming parameters for the message</param>
             <param name="provider">The service provider to be used for creating any instances of classes recieving the message</param>
         </member>
+        <member name="T:Penguin.Messaging.Abstractions.Interfaces.IMessage`1">
+            <summary>
+            Base message interface required for automatically subscribing methods
+            </summary>
+            <typeparam name="T">The inner object type of the message</typeparam>
+        </member>
+        <member name="P:Penguin.Messaging.Abstractions.Interfaces.IMessage`1.Target">
+            <summary>
+            The object relevant to the message
+            </summary>
+        </member>
         <member name="T:Penguin.Messaging.Abstractions.Messages.Message`1">
             <summary>
             Base message class required for automatically subscribing methods
