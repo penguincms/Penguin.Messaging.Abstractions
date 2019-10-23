@@ -1,8 +1,9 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <Import Project="Penguin.Projects.Shared\Penguin.Projects.Shared.csproj" />
   <PropertyGroup>
     <PackageProjectUrl>https://github.com/penguincms/Penguin.Messaging.Abstractions</PackageProjectUrl>
     <Version>2.1.2</Version>
-	<Description>Abstractions for Penguin.Messaging.Core</Description>
+    <Description>Abstractions for Penguin.Messaging.Core</Description>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 </Project>
