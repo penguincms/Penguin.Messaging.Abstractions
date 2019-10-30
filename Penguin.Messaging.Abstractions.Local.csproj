@@ -5,5 +5,7 @@
     <Version>2.1.2</Version>
     <Description>Abstractions for Penguin.Messaging.Core</Description>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Penguin.Messaging.Abstractions</AssemblyName>
+    <RootNamespace>Penguin.Messaging.Abstractions</RootNamespace>
   </PropertyGroup>
 </Project>
