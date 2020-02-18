@@ -1,6 +1,7 @@
 ﻿namespace Penguin.Messaging.Abstractions.Interfaces
 {
 #pragma warning disable CS0618 // Type or member is obsolete
+
     /// <summary>
     /// This class denotes a class set to be automatically subscribed by the message handler when the SubscribeAll method is called
     /// </summary>
@@ -15,9 +16,10 @@
     }
 
 #pragma warning disable CS0618 // Type or member is obsolete
-                              /// <summary>
-                              /// This class denotes a class set to be automatically subscribed by the message handler when the SubscribeAll method is called
-                              /// </summary>
+
+    /// <summary>
+    /// This class denotes a class set to be automatically subscribed by the message handler when the SubscribeAll method is called
+    /// </summary>
     public interface IMessageHandler<T1, T2> : IMessageHandler
 #pragma warning restore CS0618 // Type or member is obsolete
     {

@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Penguin.Messaging.Abstractions.Interfaces
-{    
+﻿namespace Penguin.Messaging.Abstractions.Interfaces
+{
     /// <summary>
     /// Base message interface required for automatically subscribing methods
     /// </summary>
