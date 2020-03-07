@@ -14,7 +14,10 @@ namespace Penguin.Messaging.Abstractions.DependencyInjection
         /// </summary>
         /// <param name="serviceType">The type to resolve</param>
         /// <returns>A new instance</returns>
-        public object GetService(Type serviceType) => Activator.CreateInstance(serviceType);
+        public object GetService(Type serviceType)
+        {
+            return Activator.CreateInstance(serviceType);
+        }
 
         #endregion Methods
     }
