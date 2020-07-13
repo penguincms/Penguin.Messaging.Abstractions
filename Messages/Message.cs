@@ -13,7 +13,7 @@ namespace Penguin.Messaging.Abstractions.Messages
         /// <summary>
         /// The object relevant to the message
         /// </summary>
-        public T Target { get; set; }
+        public new T Target { get => (T)base.Target; set => base.Target = value; }
 
         #endregion Properties
 
@@ -36,7 +36,7 @@ namespace Penguin.Messaging.Abstractions.Messages
     /// </summary>
     public abstract class Message : IMessage
     {
-        public object Target { get; }
+        public object Target { get; set; }
         object IMessage.Target => this.Target;
     }
 }
