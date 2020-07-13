@@ -36,5 +36,7 @@ namespace Penguin.Messaging.Abstractions.Messages
     /// </summary>
     public abstract class Message : IMessage
     {
+        public object Target { get; }
+        object IMessage.Target => this.Target;
     }
 }

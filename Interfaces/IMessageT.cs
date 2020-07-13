@@ -9,6 +9,6 @@
         /// <summary>
         /// The object relevant to the message
         /// </summary>
-        T Target { get; }
+        new T Target { get; }
     }
 }
