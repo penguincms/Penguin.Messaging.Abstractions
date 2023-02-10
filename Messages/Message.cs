@@ -23,9 +23,9 @@ namespace Penguin.Messaging.Abstractions.Messages
         /// Constructs a new message and sets the target to the relevant object
         /// </summary>
         /// <param name="target">The object relevant to the message</param>
-        public Message(T target)
+        protected Message(T target)
         {
-            this.Target = target;
+            Target = target;
         }
 
         #endregion Constructors
@@ -37,6 +37,6 @@ namespace Penguin.Messaging.Abstractions.Messages
     public abstract class Message : IMessage
     {
         public object Target { get; set; }
-        object IMessage.Target => this.Target;
+        object IMessage.Target => Target;
     }
 }
